@@ -59,4 +59,22 @@
         android:layout_alignStart="@+id/nameField"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change Dog!"
+        android:id="@+id/changer"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="changeImage" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/imageView"
+        android:layout_below="@+id/changer"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/dog" />
+
 </RelativeLayout>
