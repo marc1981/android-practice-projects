@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
         ImageView chief = (ImageView) findViewById(R.id.chief);
         chief.animate().scaleX(0.5f).scaleY(0.5f).setDuration(4000);
     }
-
+    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

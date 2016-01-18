@@ -17,7 +17,8 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:src="@drawable/krusty"
-        android:onClick="fade" />
+        android:onClick="fade"
+        android:alpha="1" />
 
     <ImageView
         android:layout_width="match_parent"
