@@ -7,9 +7,10 @@ import android.widget.GridLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.media.MediaPlayer;
 
 public class MainActivity extends AppCompatActivity {
-
+    MediaPlayer soundFx;
     //0 = Yellow; 1 = Red;
     int activePlayer = 0;
 
@@ -42,6 +43,7 @@ public class MainActivity extends AppCompatActivity {
                 activePlayer = 0;
             }
 
+            soundFx.start();
             counter.animate().translationYBy(1000f).rotation(720).setDuration(300);
 
             for (int[] winningPosition: winningPositions){
@@ -117,5 +119,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        soundFx = MediaPlayer.create(this, R.raw.whiz);
     }
 }
