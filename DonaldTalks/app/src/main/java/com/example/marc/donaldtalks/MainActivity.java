@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
     Button controllerButton;
     Boolean counterIsActive = false;
     CountDownTimer countDownTimer;
-    MediaPlayer mPlayer = (MediaPlayer.create(getApplicationContext(), R.id.worst));
+
 
     public void resetTimer(){
         timerTextView.setText("0:30");
@@ -68,8 +68,7 @@ public class MainActivity extends AppCompatActivity {
                 public void onFinish() {
 
                     resetTimer();
-                    mPlayer = MediaPlayer.create(getApplicationContext(), R.raw.worst);
-                    mPlayer.start();
+                    timerTextView.setText("BOOM!");
 
                 }
             }.start();
